@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+        <!--android:id="@+id/zxdetail_share"-->
+        <!--android:icon="@mipmap/btn_share_white_normal"-->
+        <!--android:title="zxdetail_share"-->
+        <!--app:showAsAction="always" />-->
+       <!--&lt;!&ndash;是否显示在标题栏上面&ndash;&gt;-->
+    <!--&lt;!&ndash;<item&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/delete"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:icon="@mipmap/ic_launcher"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:title="Delete"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:showAsAction="ifRoom" />&ndash;&gt;-->
+    <!--&lt;!&ndash;<item&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/settings"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:icon="@mipmap/ic_launcher"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:title="Settings"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:showAsAction="never" />&ndash;&gt;-->
+</menu>

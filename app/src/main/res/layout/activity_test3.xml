@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333"
+    tools:context="com.example.yuer.myoschina.activity.Test3Activity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/flower"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/tv1"
+        android:layout_centerInParent="true"
+        />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/arq"
+            android:id="@+id/shang_y"
+            android:layout_above="@+id/tv1"
+            android:background="#333"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/arn"
+            android:id="@+id/xia_y"
+            android:layout_below="@+id/tv1"
+            android:background="#333"/>
+</RelativeLayout>

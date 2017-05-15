@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yuer.myoschina">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 打开摄像头权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 友盟分享 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="开源中国" />
+        <activity android:name=".activity.AuthorActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TestActivity" />
+        <activity android:name=".activity.WelcomeActivity" />
+        <activity android:name=".activity.Test2Activity" />
+        <activity
+            android:name=".activity.NewsDetailActivity"
+            android:label="资讯详情" />
+        <activity
+            android:name=".activity.CommentListActivity"
+            android:label="返回" />
+        <activity
+            android:name=".activity.DongdanDetailActivity"
+            android:label="动弹详情" />
+
+        <!-- 友盟集成分享的活动 -->
+        <!-- 微博 -->
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- qq精简版 -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 微博需要的 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <!--
+            友盟appkey
+            改成自己的appkey
+        -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59126d167f2c74342c001e1d" />
+
+        <activity android:name=".activity.Test3Activity" />
+        <activity android:name=".activity.Test4Activity" />
+        <activity
+            android:name=".activity.YaoYiYaoActivity"
+            android:label="摇一摇" />
+        <activity android:name=".activity.BigImageActivity" />
+        <activity
+            android:name=".activity.KaiYuanRuanJianActivity"
+            android:label="开源软件" />
+        <activity android:name=".activity.PubDongdanActivity"
+            android:label="弹一弹"></activity>
+    </application>
+
+</manifest>

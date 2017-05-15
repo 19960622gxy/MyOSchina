@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#E8E8E8"/>
+
+
+    <!--码云推荐-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_discover_git"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="码云推荐"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#333"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/faxian_right"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A0A0A0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--开源软件-->
+    <LinearLayout
+        android:id="@+id/faxian_kaiyuanruanjian"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_discover_softwares"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="开源软件"
+            android:layout_gravity="center_vertical"
+            android:textColor="#333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/faxian_right"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="8dp" />
+    </LinearLayout>
+          <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A0A0A0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#E8E8E8"/>
+
+
+    <!--扫一扫-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:id="@+id/ll_sao">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_discover_scan"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="扫一扫"
+            android:layout_gravity="center_vertical"
+            android:textColor="#333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/faxian_right"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="8dp" />
+        </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A0A0A0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--摇一摇-->
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:id="@+id/ll_yao">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_discover_shake"
+                android:layout_gravity="center_vertical"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="摇一摇"
+                android:layout_gravity="center_vertical"
+                android:textColor="#333"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/faxian_right"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:layout_width="8dp"
+                android:layout_height="8dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#A0A0A0"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#E8E8E8"/>
+
+
+    <!--附近的程序员-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_discover_nearby"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="附近的程序员"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="#333"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_located"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/faxian_right"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#A0A0A0"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--线下活动-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_my_event"
+            android:layout_gravity="center_vertical"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="线下活动"
+            android:layout_gravity="center_vertical"
+            android:textColor="#333"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/faxian_right"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="8dp" />
+    </LinearLayout>
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A0A0A0"/>
+
+
+</LinearLayout>

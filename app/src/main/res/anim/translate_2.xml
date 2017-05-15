@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--//用来描述运动轨迹
+         动画展示2秒钟完成
+         2秒在x轴上运动200dp-->
+    <!--<translate-->
+        <!--android:duration="2000"-->
+        <!--android:toXDelta="200"-->
+        <!--android:toYDelta="0">-->
+    <translate
+        android:duration="2000"
+        android:toXDelta="0"
+        android:toYDelta="-130">
+
+    </translate>
+</set>

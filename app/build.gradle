@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.example.yuer.myoschina"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //需要去application文件中初始化
+    //去application文件中初始化 也是实现圆形头像框
+    //下拉刷新 框架
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.lzy.net:okgo:+'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    compile 'com.liaoinstan.springview:library:1.2.6'
+    compile 'com.android.support:support-v4:24.2.1'
+
+    compile 'cn.yipianfengye.android:zxing-library:2.1'   //二维码
+    compile 'org.greenrobot:eventbus:3.0.0'  //传送数据 刷新我的页面
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:+'  //图片框架
+    compile 'com.squareup.picasso:picasso:2.5.2'    //毕加索头像框架
+
+    testCompile 'junit:junit:4.12'
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_tool.jar')
+
+}

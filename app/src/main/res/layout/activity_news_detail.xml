@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_news_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yuer.myoschina.activity.NewsDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        >
+        <!--找到系统的actionBar的高度-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="资讯详情"-->
+            <!--android:textSize="24sp"/>-->
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_marginLeft="190dp"/>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论数"
+            android:id="@+id/commentCount"
+            android:layout_gravity="right" />
+        <!--<ImageView-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="20dp" />-->
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/webview_newsdetail"
+        ></WebView>
+    <!--WebView加载页面-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/etComment"
+            android:hint="发表评论" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSend"
+            android:text="发送" />
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newsdetial_shoucang"
+            android:src="@mipmap/ic_fav_normal"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:id="@+id/newsdetial_share"
+            android:src="@mipmap/share"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+</LinearLayout>
